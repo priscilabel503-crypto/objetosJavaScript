@@ -3,16 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ObjetosJavaScript</title>
+    <title>Objetos JavaScript</title>
 </head>
 <body>
- h1>ObjetosJavaScript</h1>
+
+<h1>Objetos JavaScript</h1>
+
 <script>
-    const pessoa = {
-        nome: "João",
-        idade: 30,
-        saudacao: function() {
-            console.log("ola, meu nome é " + this.nome);
+
+const pessoa = {
+    nome:"priscila",
+    idade: 16,
+
+    saudacao: function() {
+        console.log("Olá, meu nome é " + this.nome);
     }
+};
+
+const carro = {
+    nome: "Ferrari",
+    peso: 1500,
+    cor: "Vermelha",
+
+    correr: function() {
+        console.log(this.nome + " está correndo!");
+    }
+};
+
+const gato = {
+    nome: "Mingau",
+    peso: 5,
+    cor: "Branco",
+
+    correr: function() {
+        console.log(this.nome + " está correndo!");
+    }
+};
+
+const cachorro = {
+    nome: "bela",
+    peso: 20,
+    cor: "Marrom",
+
+    correr: function() {
+        console.log(this.nome + "está latindo!");
+    }
+};
+
+const bicicleta = {
+    nome: "Caloi",
+    peso: 12,
+    cor: "rosa",
+
+    correr: function() {
+        console.log(this.nome + " está pedalando!");
+    }
+};
+
+const aviao = {
+    nome: "Boeing 737",
+    peso: 41000,
+    cor: "Branco",
+
+    correr: function() {
+        console.log(this.nome + " está voando!");
+    }
+};
+
+// Chamando os métodos
+pessoa.saudacao();
+
+carro.correr();
+gato.correr();
+cachorro.latindo();
+bicicleta.pedalar();
+aviao.correr();
+
+</script>
+
 </body>
 </html>
